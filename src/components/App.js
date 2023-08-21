@@ -6,7 +6,7 @@ import React , {useEffect, useState} from "react"
 const App = () => {
   const[change , setChange] = useState("")
     useEffect(() => {
-        document.getElementById("preview").innerText = change
+        document.getElementById("markDownPrev").innerText = change
     }, [change])
 
     return (
@@ -17,8 +17,8 @@ const App = () => {
             onChange={(e) => setChange(e.target.value)}
             />
           </div>
-          <div className="markDownPrev">
-            <div id="preview">
+          <div className="preview">
+            <div id="markDown">
                 
             </div>
           </div>
