@@ -6,13 +6,22 @@ import React , {useEffect, useState} from "react"
 const App = () => {
   const[change , setChange] = useState("")
     useEffect(() => {
-        document.getElementById("markDownPrev").innerText = change
+        document.getElementById("markDown").innerText = change
     }, [change])
 
     return (
-        <div>
-            <input className="markDown" value={change} onChange={(e)=>setChange(e.target.value)} type="text"></input>
-            <div id="markDownPrev"></div>
+        <div className="app">
+          <div className="markDownContainer">
+            <textarea 
+            value={change} 
+            onChange={(e) => setChange(e.target.value)}
+            />
+          </div>
+          <div className="markDownPrev">
+            <div id="markDown">
+                
+            </div>
+          </div>
         </div>
     )
 }
