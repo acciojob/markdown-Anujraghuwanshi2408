@@ -18,9 +18,9 @@ const App = () => {
             />
           </div>
           <div className="preview">
-            <div id="markDown">
+            <h1 id="markDown">
                 
-            </div>
+            </h1>
           </div>
         </div>
     )
