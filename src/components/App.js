@@ -6,7 +6,7 @@ import React , {useEffect, useState} from "react"
 const App = () => {
   const[change , setChange] = useState("")
     useEffect(() => {
-        document.getElementById("markDownPrev").innerText = change
+        document.getElementById("markDown").innerText = change
     }, [change])
 
     return (
